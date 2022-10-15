@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="./src/index.js"></script>
+    <script src="./src/main.js"></script>
+  </head>
+
+  <body>
+    <div id="home">
+      <div class="topnav" id="myTopnav">
+        <div class="w-container">
+          <a href="#home" class="active">
+            <div class="logo-container">
+              <img class="logo" src="./img/KashiKally-logo.svg" />
+              <p class="logo-text">Kashikally</p>
+            </div>
+          </a>
+        <div class="mobilenav" id="mobilemenu">
+            <a class="mobileitemnav" href="#about" onclick="topNavFunction()">About</a>
+            <a class="mobileitemnav" href="#what-we-offer" onclick="topNavFunction()">What We Offer</a>
+            <a class="mobileitemnav" href="#product" onclick="topNavFunction()">Product</a>
+            <a class="mobileitemnav" href="#why-now" onclick="topNavFunction()">Why Now?</a>
+            <a class="signupnav mobileitemnav" href="#signup2" onclick="topNavFunction()">Sign-up</a>
+            <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- <a href="#home" class="active">KashiKally</a> -->
+        <div class="rightnav">
+            <a class="rightnav" href="#about">About</a>
+            <a class="rightnav" href="#what-we-offer">What We Offer</a>
+            <a class="rightnav" href="#product">Product</a>
+            <a class="rightnav" href="#why-now">Why Now?</a>
+            <a class="signupnav rightnav" href="#signup2" >Sign-up</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div id="about" class="hero-section wf-section">
+      <div class="w-container">
+        <div class="text-block">Good for People, Good for the Planet</div>
+        <h1 class="heading">Introducing Kashikally</h1>
+        <p class="paragraph-2">
+          Transforming the way we consume through the power of people and
+          technology. What if you could get what you want without a penny? The
+          more you share, the more you earn is our goal. Based on your
+          contribution to the community, you can get what you want in return at
+          no cost.
+        </p>
+      </div>
+    </div>
+
+    <div id="what-we-offer" class="section wf-section vertical-spacing">
+      <div class="w-container">
+        <div class="grid">
+          <div id="youtube" class="media-content">
+            <iframe
+              class="responsive-iframe"
+              src="https://www.youtube.com/embed/BS616-03imk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div id="wwo-description" class="txt-content">
+            <h2 class="heading-7 heading-left">Sharing<br /> easier and faster</h2>
+            <p class="paragraph-2">
+              You can exchange resources you already have fast and easily. We
+              apply “passive search” so that you can register what you want and
+              receive it more efficiently. No more searching just to find what
+              you want.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sign-up" class="section-2 wf-section">
+      <div class="container">
+        <div class="row">
+          <h2 class="heading-7 flex-item">Sign up<br />for early access!</h2>
+          <div class="form-for-email w-form flex-item">
+            <form
+              id="emailform"
+              name="emailform"
+              data-name="Email Form"
+              method="get"
+              aria-label="Email Form"
+            >
+              <input
+                type="text"
+                class="text-field w-input"
+                maxlength="256"
+                name="field"
+                data-name="Field"
+                placeholder="Your email"
+                id="field"
+              /><input
+                type="submit"
+                value="Submit"
+                data-wait="Please wait..."
+                onclick="EmailValidation(document.emailform.field)"
+                class="submit-button w-button"
+              />
+            </form>
+            <div
+              class="success-message w-form-done"
+              tabindex="-1"
+              role="region"
+              aria-label="Email Form success"
+            >
+              <div>
+                Thank you for your interest! &nbsp;<br />We will let you know
+                about the launch :)
+              </div>
+            </div>
+            <div
+              class="error-message w-form-fail"
+              tabindex="-1"
+              role="region"
+              aria-label="Email Form failure"
+            >
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="product" class="section wf-section vertical-spacing">
+      <div class="w-container">
+        <div class="grid">
+          <div class="txt-content">
+            <h2
+              id="w-node-_36333986-8bd9-d7c9-5848-ee58cf7fa629-938d219a"
+              class="heading-7 heading-left"
+            >
+              Efficient System <br />for P to P Sharing
+            </h2>
+            <p
+              id="w-node-_1d9201cd-dd0f-8e4d-d514-7da599f2e559-938d219a"
+              class="paragraph-2"
+            >
+              Anything is valuable for someone somewhere. What if you could give
+              away something you are not using and get something you need in
+              return easily?
+            </p>
+          </div>
+          <div class="media-content">
+            <img
+              id="kashikally-screens"
+              src="./img/kashikally-screens.png"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="why-now" class="section wf-section gradient-bg-2">
+      <div id="why-now-text" class="w-container">
+        <div class="grid">
+          <div class="spacer"></div>
+          <div>
+            <h2 class="heading-7 heading-left ">
+              Prices Becoming <br />Higher and Higher
+            </h2>
+            <p class="paragraph-2">
+              The widely spreading global inflation has been highly impacting
+              the lives of people. It affects the most vulnerable population
+              including the younger generation with less income and savings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section wf-section gradient-bg">
+        <div id="sustainable-core-text" class="w-container">
+          <div class="grid">
+            <div class="txt-content">
+              <h2 class="heading-7 heading-left">
+                The Planet is<br/>
+                on the Edge
+              </h2>
+              <p class="paragraph-2" >
+              The Earth is facing a ‘triple planetary crisis’: climate disruption, nature, and biodiversity loss, and pollution and waste. Human activities need to be transformed.
+              </p>
+            </div>
+            <div class="spacer"></div>
+          </div>
+        </div>
+      </div>
+
+  <div id="signup2" class="section">
+    <div class="container">
+        <h2 class="heading-6 flex-item">The World Everyone’s Needs are Met</h2>
+        <div class="form-for-email w-form flex-item">
+            <p class="bottom-space-2 flex-item">Even if you think you don't have it, others might have one for you. We are here to assist the sharing.</paragraph-2>
+            <div class="section-6 wf-section">
+              <div class="container-4 w-container">
+                <div class="row">
+                  <h2 class="heading-2 flex-item">Sign-up to be notified <br>when we launch!</h2>
+                  <div class="form-for-email w-form flex-item">
+                    <form
+                      id="emailform"
+                      name="emailform"
+                      data-name="Email Form"
+                      method="get"
+                      aria-label="Email Form"
+                    >
+                      <input
+                        type="text"
+                        class="text-field w-input"
+                        maxlength="256"
+                        name="field"
+                        data-name="Field"
+                        placeholder="Your email"
+                        id="field"
+                      /><input
+                        type="submit"
+                        value="Submit"
+                        data-wait="Please wait..."
+                        onclick="EmailValidation(document.emailform.field)"
+                        class="submit-button w-button"
+                      />
+                    </form>
+                    <div
+                      class="success-message w-form-done"
+                      tabindex="-1"
+                      role="region"
+                      aria-label="Email Form success"
+                    >
+                      <div>
+                        Thank you for your interest! &nbsp;<br />We will let you know
+                        about the launch :)
+                      </div>
+                    </div>
+                    <div
+                      class="error-message w-form-fail"
+                      tabindex="-1"
+                      role="region"
+                      aria-label="Email Form failure"
+                    >
+                      <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+   
+    <div class="footer wf-section">
+      <div class="footer-wrapper">
+        <div class="footer-textblock">
+            KashiKally © 2022 &nbsp; <br />Privacy Policy ・ Cookies Policy ・ Terms
+            of Use  
+        </div>
+        <div class="footer-logo-wrapper">
+          <div class="footer-logo">
+            <img class="logo" src="./img/KashiKally-logo.svg" />
+          </div>
+          <div class="logo-name">Kashikally</div>
+        </div>
+    </div>
+    </div>
+    <script>
+      function topNavFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+        var mn = document.getElementById("mobilemenu");
+        if(mn.className === "mobilenav") {
+          mn.className += " transition"
+        } else {
+          mn.className = "mobilenav"
+        }
+      }
+
+
+      const validateEmail = (email) => {
+        return String(email)
+          .toLowerCase()
+          .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          );
+      };
+
+      var form = document.getElementById("emailform");
+      function handleForm(event) {
+        event.preventDefault();
+      }
+      form.addEventListener("submit", handleForm);
+
+      function EmailValidation(enteredEmail) {
+        if (validateEmail(enteredEmail.value)) {
+          alert("You have entered a valid email address!!!!!!"); //The pop up alert for a valid email address
+          // document.emailform.field.focus();
+          // return true;
+        } else {
+          alert("You have entered an invalid email address!"); //The pop up alert for an invalid email address
+          // document.emailform.field.focus();
+          // return false;
+        }
+      }
+    </script>
+  </body>
+</html>
